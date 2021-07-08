@@ -18,6 +18,10 @@ app.get('/', (req, res) => {
   res.send('Welcome to the Hello World! API')
 })
 
+// LANGUAGES 
+const languagesController = require('./controllers/languages_controller.js')
+app.use('/lang', languagesController)
+
 // LISTEN
 app.listen(PORT, () => {
   console.log('Greetings! From port: ', PORT);
