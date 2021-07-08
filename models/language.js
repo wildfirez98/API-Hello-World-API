@@ -6,7 +6,7 @@ const { Schema } = mongoose
 const languageSchema = new Schema({
     name: { type: String, required: true },
     greeting: String,
-    panagram: String,
+    pangram: String,
     filler: String
 })
 
