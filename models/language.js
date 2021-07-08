@@ -7,7 +7,7 @@ const languageSchema = new Schema({
     name: { type: String, required: true },
     greeting: String,
     panagram: String,
-    nonsense: String
+    filler: String
 })
 
 // model and export 
