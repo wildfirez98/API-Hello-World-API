@@ -11,8 +11,8 @@ languages.get('/', (req, res) => {
 })
 
 // SHOW
-languages.get('/:lang', (req, res) => {
-    Language.findOne({ name: req.params.lang .toLowerCase() })
+languages.get('/:name', (req, res) => {
+    Language.findOne({ name: req.params.name .toLowerCase() })
         .then(foundLanguage => {
             res.json(foundLanguage)
         })

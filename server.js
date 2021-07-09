@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 
 // LANGUAGES 
 const languagesController = require('./controllers/languages_controller.js')
-app.use('/lang', languagesController)
+app.use('/languages', languagesController)
 
 // LISTEN
 app.listen(PORT, () => {
