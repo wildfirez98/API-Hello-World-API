@@ -33,7 +33,9 @@ languages.get('/seed', (req, res) => {
         }
     ])
         .then(createdLanguages => {
-            res.redirect('/lang')
+            res.json({
+                message: "Successfuly seeded!"
+            })
         })
 })
 
